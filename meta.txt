@@ -5,3 +5,39 @@ node server.js
 # Start frontend
 cd ../frontend
 npm start
+
+----------------------------------------------------------------------
+🚀 Final Steps to Fix Everything
+1️⃣ Fix Node.js Version
+Run:
+
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y --allow-downgrades nodejs
+node -v
+
+Expected Output:
+v20.x.x
+Then, reinstall dependencies:
+
+
+cd cpu-autoscaler/frontend
+rm -rf node_modules package-lock.json
+npm install
+2️⃣ Fix Google Cloud SDK (If Necessary)
+If gcloud is not working, reinstall it using Snap:
+
+
+sudo apt remove google-cloud-sdk -y
+sudo snap install google-cloud-sdk
+gcloud --version
+✅ Final Check: Run These Commands
+After fixing Node.js and Google Cloud SDK, test everything:
+
+
+# Start backend
+cd cpu-autoscaler/backend
+node server.js
+
+# Start frontend
+cd ../frontend
+npm run dev
