@@ -1,0 +1,210 @@
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ chmod +x setup1.sh
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ls
+errorlog.txt  installnode.sh  meta.txt  setup1.sh  setup.sh
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ nano setup1.sh
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ./setup1.sh
+🚀 Setting up CPU Auto-Scaler Project...
+📦 Setting up Backend...
+Wrote to /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/backend/package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+added 166 packages, and audited 167 packages in 12s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+🎨 Setting up Frontend...
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'create-vite@6.3.1',
+npm WARN EBADENGINE   required: { node: '^18.0.0 || ^20.0.0 || >=22.0.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/frontend/frontend...
+│
+└  Done. Now run:
+
+  cd frontend
+  npm install
+  npm run dev
+
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/js@9.22.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'vite@6.2.1',
+npm WARN EBADENGINE   required: { node: '^18.0.0 || ^20.0.0 || >=22.0.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint@9.22.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'globals@15.15.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/config-array@0.19.2',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/config-helpers@0.1.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/core@0.12.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/eslintrc@3.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/plugin-kit@0.2.7',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanfs/node@0.16.6',
+npm WARN EBADENGINE   required: { node: '>=18.18.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanwhocodes/retry@0.4.2',
+npm WARN EBADENGINE   required: { node: '>=18.18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint-scope@8.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint-visitor-keys@4.2.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'espree@10.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/object-schema@2.1.6',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'globals@14.0.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanfs/core@0.19.1',
+npm WARN EBADENGINE   required: { node: '>=18.18.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanwhocodes/retry@0.3.1',
+npm WARN EBADENGINE   required: { node: '>=18.18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'esbuild@0.25.1',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'rollup@4.35.0',
+npm WARN EBADENGINE   required: { node: '>=18.0.0', npm: '>=8.0.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+
+added 149 packages, and audited 150 packages in 11s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+☁️ Adding Google Cloud SDK repository...
+[sudo] password for ubuntu1: 
+deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1022  100  1022    0     0    909      0  0:00:01  0:00:01 --:--:--   910
+Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease                    
+Hit:2 http://security.ubuntu.com/ubuntu bionic-security InRelease             
+Hit:3 https://deb.nodesource.com/node_16.x nodistro InRelease                 
+Get:4 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,618 B]     
+Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease      
+Err:4 https://packages.cloud.google.com/apt cloud-sdk InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+Hit:6 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done                     
+W: GPG error: https://packages.cloud.google.com/apt cloud-sdk InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+E: The repository 'https://packages.cloud.google.com/apt cloud-sdk InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+🔑 Authenticating Google Cloud...
+./setup1.sh: line 183: gcloud: command not found
+./setup1.sh: line 184: gcloud: command not found
+⬆️ Upgrading Node.js to version 20...
+2025-03-13 23:49:28 - Installing pre-requisites
+Hit:1 https://deb.nodesource.com/node_16.x nodistro InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease                    
+Hit:3 http://security.ubuntu.com/ubuntu bionic-security InRelease   
+Get:4 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,618 B]
+Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease      
+Err:4 https://packages.cloud.google.com/apt cloud-sdk InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+Hit:6 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+W: GPG error: https://packages.cloud.google.com/apt cloud-sdk InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+E: The repository 'https://packages.cloud.google.com/apt cloud-sdk InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+2025-03-13 23:49:31 - Error: Failed to run 'apt-get update' (Exit Code: 0)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nodejs is already the newest version (16.20.2-1nodesource1).
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+v16.20.2
+✅ Setup complete! Use the following commands to start the project:
+
+Backend: cd cpu-autoscaler/backend && node server.js
+Frontend: cd cpu-autoscaler/frontend/frontend && npm run dev
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ 
