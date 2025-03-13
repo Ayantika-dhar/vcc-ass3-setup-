@@ -1,0 +1,304 @@
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ./installnode.sh
+🚀 Updating system package list...
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+All packages are up to date.
+📦 Installing prerequisites...
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+software-properties-common is already the newest version (0.96.24.32.22).
+software-properties-common set to manually installed.
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  curl libcurl4
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 379 kB of archives.
+After this operation, 1,059 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcurl4 amd64 7.58.0-2ubuntu3.24 [221 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 curl amd64 7.58.0-2ubuntu3.24 [159 kB]
+Fetched 379 kB in 3s (124 kB/s)
+Selecting previously unselected package libcurl4:amd64.
+(Reading database ... 170039 files and directories currently installed.)
+Preparing to unpack .../libcurl4_7.58.0-2ubuntu3.24_amd64.deb ...
+Unpacking libcurl4:amd64 (7.58.0-2ubuntu3.24) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.58.0-2ubuntu3.24_amd64.deb ...
+Unpacking curl (7.58.0-2ubuntu3.24) ...
+Setting up libcurl4:amd64 (7.58.0-2ubuntu3.24) ...
+Setting up curl (7.58.0-2ubuntu3.24) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+🔍 Checking if Node.js is already installed...
+🌍 Adding Node.js 16.x LTS repository...
+
+================================================================================
+================================================================================
+
+                              DEPRECATION WARNING                            
+
+     Node.js 16.x is no longer actively supported!
+
+  You will not receive security or critical stability updates for this version.
+
+  You should migrate to a supported version of Node.js as soon as possible.
+  Use the installation script that corresponds to the version of Node.js you
+  wish to install. e.g.
+  
+   * https://deb.nodesource.com/setup_16.x — Node.js 16 "Gallium" (deprecated)
+   * https://deb.nodesource.com/setup_18.x — Node.js 18 "Hydrogen" (Maintenance)
+   * https://deb.nodesource.com/setup_19.x — Node.js 19 "Nineteen" (deprecated)
+   * https://deb.nodesource.com/setup_20.x — Node.js 20 LTS "Iron" (recommended)
+   * https://deb.nodesource.com/setup_21.x — Node.js 21 "Iron" (current)
+   
+
+
+  Please see https://github.com/nodejs/Release for details about which
+  version may be appropriate for you.
+
+  The NodeSource Node.js distributions repository contains
+  information both about supported versions of Node.js and supported Linux
+  distributions. To learn more about usage, see the repository:
+   https://github.com/nodesource/distributions
+
+================================================================================
+================================================================================
+
+Continuing in 10 seconds ...
+
+2025-03-13 23:26:37 - Installing pre-requisites
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done                     
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ca-certificates is already the newest version (20230311ubuntu0.18.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (7.58.0-2ubuntu3.24).
+gnupg is already the newest version (2.2.4-1ubuntu1.6).
+gnupg set to manually installed.
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,692 B of archives.
+After this operation, 155 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.17 [1,692 B]
+Fetched 1,692 B in 1s (1,666 B/s)              
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 170052 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.17_all.deb ...
+Unpacking apt-transport-https (1.6.17) ...
+Setting up apt-transport-https (1.6.17) ...
+gpg: WARNING: unsafe ownership on homedir '/home/ubuntu1/.gnupg'
+Get:1 https://deb.nodesource.com/node_16.x nodistro InRelease [12.1 kB]
+Get:2 https://deb.nodesource.com/node_16.x nodistro/main amd64 Packages [7,462 B]
+Hit:3 http://in.archive.ubuntu.com/ubuntu bionic InRelease                    
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease       
+Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease      
+Hit:6 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Fetched 19.6 kB in 1s (17.7 kB/s)
+Reading package lists... Done
+2025-03-13 23:26:47 - Repository configured successfully. To install Node.js, run: apt-get install nodejs -y
+⬇️ Installing Node.js and npm...
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 27.5 MB of archives.
+After this operation, 128 MB of additional disk space will be used.
+Get:1 https://deb.nodesource.com/node_16.x nodistro/main amd64 nodejs amd64 16.20.2-1nodesource1 [27.5 MB]
+Fetched 27.5 MB in 3s (10.8 MB/s)  
+Selecting previously unselected package nodejs.
+(Reading database ... 170056 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.20.2-1nodesource1_amd64.deb ...
+Unpacking nodejs (16.20.2-1nodesource1) ...
+Setting up nodejs (16.20.2-1nodesource1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+🔍 Verifying installation...
+v16.20.2
+8.19.4
+✅ Node.js and npm installed successfully!
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ls
+installnode.sh  meta.txt  setup.sh
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ chmod +x setup.sh
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ./setup.sh
+🚀 Setting up CPU Auto-Scaler Project...
+📦 Setting up Backend...
+Wrote to /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/backend/package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+npm notice 
+npm notice New major version of npm available! 8.19.4 -> 11.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.2.0
+npm notice Run npm install -g npm@11.2.0 to update!
+npm notice 
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/worker_threads - Not found
+npm ERR! 404 
+npm ERR! 404  'worker_threads@*' is not in this registry.
+npm ERR! 404 This package name is not valid, because 
+npm ERR! 404  1. worker_threads is a core module name
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/ubuntu1/.npm/_logs/2025-03-13T17_57_54_506Z-debug-0.log
+🎨 Setting up Frontend...
+Need to install the following packages:
+  create-react-app@5.1.0
+Ok to proceed? (y) y
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated uid-number@0.0.6: This package is no longer supported.
+npm WARN deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm WARN deprecated fstream-ignore@1.0.5: This package is no longer supported.
+npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm WARN deprecated fstream@1.0.12: This package is no longer supported.
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+create-react-app is deprecated.
+
+You can find a list of up-to-date React frameworks on react.dev
+For more info see:https://react.dev/link/cra
+
+This error message will only be shown once per install.
+
+Creating a new React app in /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/frontend.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1324 packages in 1m
+
+268 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/dom@10.4.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/react@16.2.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+
+added 18 packages, and changed 1 package in 6s
+
+268 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/dom@10.4.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/react@16.2.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+
+removed 1 package, and audited 1342 packages in 3s
+
+268 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created frontend at /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/frontend
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/frontend
+  npm start
+
+Happy hacking!
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/dom@10.4.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@testing-library/react@16.2.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+
+added 36 packages, and audited 1378 packages in 5s
+
+268 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+☁️ Installing Google Cloud SDK...
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package google-cloud-sdk
+🔑 Authenticating Google Cloud...
+./setup.sh: line 176: gcloud: command not found
+./setup.sh: line 177: gcloud: command not found
+✅ Setup complete! Use the following commands to start the project:
+
+Backend: cd cpu-autoscaler/backend && node server.js
+Frontend: cd cpu-autoscaler/frontend && npm start
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ 
