@@ -1,0 +1,271 @@
+ubuntu1@UBUNTU1:~/vcc-ass3-setup-$ ./setup2.sh
+🚀 Setting up CPU Auto-Scaler Project...
+📦 Setting up Backend...
+Wrote to /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/backend/package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+added 166 packages, and audited 167 packages in 10s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+⬆️ Upgrading Node.js to version 20...
+2025-03-13 23:55:04 - Installing pre-requisites
+Hit:1 https://deb.nodesource.com/node_16.x nodistro InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease                    
+Get:3 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,618 B]     
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [102 kB]    
+Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [102 kB]   
+Err:3 https://packages.cloud.google.com/apt cloud-sdk InRelease               
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+Get:6 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [102 kB] 
+Get:7 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [76.8 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [297 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:10 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [303 kB]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [61.8 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:14 http://in.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+Get:15 http://in.archive.ubuntu.com/ubuntu bionic-backports/main amd64 DEP-11 Metadata [8,072 B]
+Get:16 http://in.archive.ubuntu.com/ubuntu bionic-backports/restricted amd64 DEP-11 Metadata [216 B]
+Get:17 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [10.0 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu bionic-backports/multiverse amd64 DEP-11 Metadata [216 B]
+Reading package lists... Done                                         
+W: GPG error: https://packages.cloud.google.com/apt cloud-sdk InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C0BA5CE6DC6315A3
+E: The repository 'https://packages.cloud.google.com/apt cloud-sdk InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+2025-03-13 23:55:11 - Error: Failed to run 'apt-get update' (Exit Code: 0)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nodejs is already the newest version (16.20.2-1nodesource1).
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+v16.20.2
+🎨 Setting up Frontend...
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in /home/ubuntu1/vcc-ass3-setup-/cpu-autoscaler/frontend...
+│
+└  Done. Now run:
+
+  npm install
+  npm run dev
+
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/js@9.22.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'vite@6.2.1',
+npm WARN EBADENGINE   required: { node: '^18.0.0 || ^20.0.0 || >=22.0.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint@9.22.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'globals@15.15.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/config-array@0.19.2',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/config-helpers@0.1.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/core@0.12.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/eslintrc@3.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/plugin-kit@0.2.7',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanfs/node@0.16.6',
+npm WARN EBADENGINE   required: { node: '>=18.18.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanwhocodes/retry@0.4.2',
+npm WARN EBADENGINE   required: { node: '>=18.18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint-scope@8.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint-visitor-keys@4.2.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'espree@10.3.0',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@eslint/object-schema@2.1.6',
+npm WARN EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'globals@14.0.0',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanfs/core@0.19.1',
+npm WARN EBADENGINE   required: { node: '>=18.18.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@humanwhocodes/retry@0.3.1',
+npm WARN EBADENGINE   required: { node: '>=18.18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'esbuild@0.25.1',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'rollup@4.35.0',
+npm WARN EBADENGINE   required: { node: '>=18.0.0', npm: '>=8.0.0' },
+npm WARN EBADENGINE   current: { node: 'v16.20.2', npm: '8.19.4' }
+npm WARN EBADENGINE }
+
+added 149 packages, and audited 150 packages in 8s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+☁️ Adding Google Cloud SDK repository...
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+
+No apt package "google-cloud-sdk", but there is a snap with that name.
+Try "snap install google-cloud-sdk"
+
+E: Unable to locate package google-cloud-sdk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+ca-certificates is already the newest version (20230311ubuntu0.18.04.1).
+gnupg is already the newest version (2.2.4-1ubuntu1.6).
+apt-transport-https is already the newest version (1.6.17).
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+gpg: WARNING: unsafe ownership on homedir '/home/ubuntu1/.gnupg'
+File '/usr/share/keyrings/cloud.google.gpg' exists. Overwrite? (y/N) y
+deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main
+Hit:1 https://deb.nodesource.com/node_16.x nodistro InRelease
+Hit:2 http://security.ubuntu.com/ubuntu bionic-security InRelease             
+Hit:3 http://in.archive.ubuntu.com/ubuntu bionic InRelease              
+Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease      
+Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease    
+Get:6 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,618 B]
+Get:7 https://packages.cloud.google.com/apt cloud-sdk/main i386 Packages [922 kB]
+Get:8 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [3,658 kB]
+Get:9 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,659 kB]
+Fetched 6,239 kB in 4s (1,706 kB/s)   
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+All packages are up to date.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 gir1.2-snapd-1
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  google-cloud-cli google-cloud-cli-anthoscli
+Suggested packages:
+  google-cloud-cli-app-engine-java google-cloud-cli-app-engine-python
+  google-cloud-cli-pubsub-emulator google-cloud-cli-bigtable-emulator
+  google-cloud-cli-datastore-emulator kubectl
+The following NEW packages will be installed:
+  google-cloud-cli google-cloud-cli-anthoscli google-cloud-sdk
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 110 MB of archives.
+After this operation, 645 MB of additional disk space will be used.
+Get:1 https://packages.cloud.google.com/apt cloud-sdk/main amd64 google-cloud-cli amd64 514.0.0-0 [85.3 MB]
+Get:2 https://packages.cloud.google.com/apt cloud-sdk/main amd64 google-cloud-cli-anthoscli amd64 514.0.0-0 [24.9 MB]
+Get:3 https://packages.cloud.google.com/apt cloud-sdk/main all google-cloud-sdk all 467.0.0-0 [1,706 B]
+Fetched 110 MB in 11s (10.1 MB/s)                                             
+Selecting previously unselected package google-cloud-cli.
+(Reading database ... 173259 files and directories currently installed.)
+Preparing to unpack .../google-cloud-cli_514.0.0-0_amd64.deb ...
+Unpacking google-cloud-cli (514.0.0-0) ...
+Selecting previously unselected package google-cloud-cli-anthoscli.
+Preparing to unpack .../google-cloud-cli-anthoscli_514.0.0-0_amd64.deb ...
+Unpacking google-cloud-cli-anthoscli (514.0.0-0) ...
+Selecting previously unselected package google-cloud-sdk.
+Preparing to unpack .../google-cloud-sdk_467.0.0-0_all.deb ...
+Unpacking google-cloud-sdk (467.0.0-0) ...
+Setting up google-cloud-cli (514.0.0-0) ...
+Setting up google-cloud-sdk (467.0.0-0) ...
+Setting up google-cloud-cli-anthoscli (514.0.0-0) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+🔑 Authenticating Google Cloud...
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=pTe5TIJnp3HEuuvZmUibwOIi2tRIoK&access_type=offline&code_challenge=JmN8J3nln5SThxR0bBjalcH0yHipaEWTSaqipI_vycw&code_challenge_method=S256
+
+
+You are now logged in as [ayanika79@gmail.com].
+Your current project is [None].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+Updated property [core/project].
+✅ Setup complete! Use the following commands to start the project:
+
+Backend: cd cpu-autoscaler/backend && node server.js
+Frontend: cd cpu-autoscaler/frontend && npm run dev
