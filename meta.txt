@@ -1,0 +1,7 @@
+# Start backend
+cd cpu-autoscaler/backend
+node server.js
+
+# Start frontend
+cd ../frontend
+npm start
