@@ -35,3 +35,30 @@ node server.js
 # Start frontend
 cd ../frontend
 npm run dev
+
+-------------------------------------------------------------------------------
+🛠 Option 1: Use Node Version Manager (NVM) [Recommended]
+NVM (Node Version Manager) allows installing the latest Node.js version without touching system dependencies.
+
+Steps:
+1️⃣ Install NVM
+
+
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+source ~/.bashrc
+2️⃣ Verify NVM is installed
+
+
+command -v nvm
+If this prints nvm, the installation was successful.
+
+3️⃣ Install and use Node.js 20
+
+
+nvm install 20
+nvm use 20
+4️⃣ Verify Node.js version
+
+
+node -v
+✔ Expected Output: v20.x.x
