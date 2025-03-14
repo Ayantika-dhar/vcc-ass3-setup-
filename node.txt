@@ -1,0 +1,13 @@
+# Update package lists
+sudo apt update && sudo apt upgrade -y
+
+# Install dependencies
+sudo apt install -y curl
+
+# Download and install the latest LTS version of Node.js (Node.js 20)
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Verify installation
+node -v
+npm -v
