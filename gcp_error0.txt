@@ -1,0 +1,48 @@
+vcc3@vcc3:~/vcc3$ ./backend.sh
+Setting up the backend for CPU Monitoring App...
+Wrote to /home/vcc3/cpu-monitoring-app/package.json:
+
+{
+  "name": "cpu-monitoring-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+added 167 packages, and audited 168 packages in 20s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Backend API created successfully!
+CPU-intensive computation script created successfully!
+Authenticating with GCP...
+ERROR: (gcloud.auth.activate-service-account) There was a problem refreshing auth tokens for account vcc3-345@vcc-ass3.iam.gserviceaccount.com: ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+Please run:
+
+  $ gcloud auth activate-service-account --key-file=SERVICE_ACCOUNT_FILE_PATH
+
+Or:
+
+  $ gcloud auth login --cred-file=SERVICE_ACCOUNT_FILE_PATH
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Updated property [core/project].
+Backend setup complete! Run 'node server.js' to start the server.
+vcc3@vcc3:~/vcc3$ 
