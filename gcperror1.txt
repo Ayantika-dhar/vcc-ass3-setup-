@@ -1,0 +1,54 @@
+vcc3@vcc3:~/vcc3$ ./backend.sh
+Setting up the backend for CPU Monitoring App...
+Wrote to /home/vcc3/cpu-monitoring-app/package.json:
+
+{
+  "name": "cpu-monitoring-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/compute": "^4.12.0",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "os-utils": "^0.0.14"
+  },
+  "devDependencies": {},
+  "description": ""
+}
+
+
+
+
+up to date, audited 168 packages in 1s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Backend API created successfully!
+CPU-intensive computation script created successfully!
+Authenticating with GCP...
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=7TElpTwdp1t3OOHulrhTjUDK79QP5w&access_type=offline&code_challenge=dNpr_jF7dFOuumU6Al9d8OxwIOadjdYd1zFx-5dpBCs&code_challenge_method=S256
+
+
+(xfce4-mime-helper:7069): Gdk-CRITICAL **: 10:14:10.017: gdk_window_get_window_type: assertion 'GDK_IS_WINDOW (window)' failed
+
+(xfce4-mime-helper:7069): Gdk-CRITICAL **: 10:14:38.980: gdk_window_get_window_type: assertion 'GDK_IS_WINDOW (window)' failed
+Falkon: 1 extensions loaded
+[7138:7169:0317/101447.378291:ERROR:context_group.cc(146)] ContextResult::kFatalFailure: WebGL1 blocklisted
+
+You are now logged in as [ayanika79@gmail.com].
+Your current project is [vcc-ass3].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+Updated property [core/project].
+Backend setup complete! Run 'node server.js' to start the server.
