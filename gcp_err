@@ -1,0 +1,36 @@
+vcc3@vcc3-virtualbox:~/cpu-monitoring-app$ node server.js
+Server running on http://localhost:5000
+CPU Usage: 0.14%
+CPU Usage: 0.00%
+CPU Usage: 0.00%
+CPU Usage: 5.10%
+CPU usage exceeded 75%! Checking if VM exists...
+No existing VM found. Creating new VM...
+CPU Usage: 7.02%
+CPU usage exceeded 75%! Checking if VM exists...
+No existing VM found. Creating new VM...
+CPU Usage: 6.27%
+CPU usage exceeded 75%! Checking if VM exists...
+Error creating VM: Command failed: gcloud compute instances create auto-scaled-vm --zone=us-central1-a --machine-type=e2-medium
+ERROR: (gcloud.compute.instances.create) Could not fetch resource:
+ - The resource 'projects/vcc-ass3/zones/us-central1-a/instances/auto-scaled-vm' already exists
+
+
+VM already exists. Transferring files...
+Transferring files using SCP...
+SCP Error: Command failed: gcloud compute scp --recurse  : --zone=
+ERROR: (gcloud.compute.scp) argument [[USER@]INSTANCE:]DEST: Must be specified.
+Usage: gcloud compute scp [[USER@]INSTANCE:]SRC [[[USER@]INSTANCE:]SRC ...] [[USER@]INSTANCE:]DEST [optional flags]
+  optional flags may be  --compress | --dest-group | --dry-run |
+                         --force-key-file-overwrite | --help | --internal-ip |
+                         --network | --plain | --port | --recurse | --region |
+                         --scp-flag | --ssh-key-expiration |
+                         --ssh-key-expire-after | --ssh-key-file |
+                         --strict-host-key-checking | --tunnel-through-iap |
+                         --zone
+
+For detailed information on this command and its flags, run:
+  gcloud compute scp --help
+
+CPU Usage: 1.95%
+^C
