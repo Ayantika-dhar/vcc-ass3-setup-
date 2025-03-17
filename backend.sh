@@ -20,7 +20,12 @@ const { spawn, exec } = require("child_process");
 const app = express();
 const PORT = 5000;
 
-let computeProcess = null; // Tracks the prime calculation process
+let computeProcess = null;
+const GCP_PROJECT="YOUR_PROJECT_ID";
+const GCP_ZONE="us-central1-a";
+const GCP_VM_NAME="auto-scaled-vm";
+const LOCAL_PATH="~/cpu-monitoring-app";
+const GCP_INSTANCE_PATH="~/cpu-monitoring-app";
 
 app.use(express.json());
 app.use(require("cors")());
@@ -59,21 +64,45 @@ setInterval(() => {
         console.log(\`CPU Usage: \${cpuPercent.toFixed(2)}%\`);
 
         if (cpuPercent > 75) {
-            console.log("CPU usage exceeded 75%! Triggering GCP VM creation...");
-            exec("gcloud compute instances create auto-scaled-vm --zone=us-central1-a --machine-type=e2-medium", 
-                (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(\`Error creating VM: \${error.message}\`);
-                        return;
-                    }
-                    console.log(\`GCP Response: \${stdout}\`);
+            console.log("CPU usage exceeded 75%! Checking if VM exists...");
+
+            exec(\`gcloud compute instances list --filter="name=${GCP_VM_NAME}" --format="value(name)"\`, (error, stdout, stderr) => {
+                if (!stdout.trim()) {
+                    console.log("No existing VM found. Creating new VM...");
+                    exec(\`gcloud compute instances create ${GCP_VM_NAME} --zone=${GCP_ZONE} --machine-type=e2-medium\`, 
+                        (error, stdout, stderr) => {
+                            if (error) {
+                                console.error(\`Error creating VM: \${error.message}\`);
+                                return;
+                            }
+                            console.log(\`VM Created: \${stdout}\`);
+                            transferFilesToGCP();
+                        }
+                    );
+                } else {
+                    console.log("VM already exists. Transferring files...");
+                    transferFilesToGCP();
                 }
-            );
+            });
         }
     });
-}, 5000); // Check CPU usage every 5 seconds
+}, 5000);
 
-// Endpoint to check GCP status (Placeholder)
+// Function to transfer files to GCP VM via SCP
+function transferFilesToGCP() {
+    console.log("Transferring files using SCP...");
+    exec(\`gcloud compute scp --recurse ${LOCAL_PATH} ${GCP_VM_NAME}:${GCP_INSTANCE_PATH} --zone=${GCP_ZONE}\`, 
+        (error, stdout, stderr) => {
+            if (error) {
+                console.error(\`SCP Error: \${error.message}\`);
+                return;
+            }
+            console.log("Files transferred successfully!");
+        }
+    );
+}
+
+// Endpoint to check GCP status
 app.get("/gcp-status", (req, res) => {
     res.json({ message: "Monitoring GCP VM status..." });
 });
@@ -86,7 +115,6 @@ echo "Backend API created successfully!"
 
 # Create compute.js for CPU-intensive task
 cat <<EOF > compute.js
-// Function to check if a number is prime
 function isPrime(num) {
     for (let i = 2; i < num; i++) {
         if (num % i === 0) return false;
@@ -103,4 +131,11 @@ EOF
 
 echo "CPU-intensive computation script created successfully!"
 
+# GCP Authentication
+echo "Authenticating with GCP..."
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp-key.json"
+gcloud auth activate-service-account --key-file="$GOOGLE_APPLICATION_CREDENTIALS"
+gcloud config set project YOUR_PROJECT_ID
+
 echo "Backend setup complete! Run 'node server.js' to start the server."
+
